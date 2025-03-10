@@ -49,8 +49,8 @@ const AuthModal = ({ onClose, onSuccess }) => {
     setLoading(true);
 
     try {
-      if (!formData.otp || formData.otp.length !== 6) {
-        throw new Error('Please enter a valid 6-digit OTP');
+      if (!formData.otp || formData.otp.length !== 4) {
+        throw new Error('Please enter a valid 4-digit OTP');
       }
 
       const result = await verifyOtp(formData.contactNo, formData.otp);

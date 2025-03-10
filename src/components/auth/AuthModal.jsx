@@ -177,7 +177,7 @@ const AuthModal = ({ onClose, onSuccess }) => {
           </div>
           <input
             type="text"
-            pattern="[0-9]{6}"
+            pattern="[0-9]{4}"
             value={formData.otp}
             onChange={(e) => {
               setError(null);
@@ -186,7 +186,7 @@ const AuthModal = ({ onClose, onSuccess }) => {
             className={`w-full px-3 py-2 border rounded-md ${
               error ? 'border-red-300' : 'border-gray-300'
             }`}
-            placeholder="Enter 6-digit OTP"
+            placeholder="Enter 4-digit OTP"
             required
           />
         </div>
